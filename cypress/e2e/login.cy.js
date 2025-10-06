@@ -2,6 +2,7 @@ describe('Login', () => {
   beforeEach(() => {
     cy.visit('http://localhost:4000')
   })
+  
   it('Login com dados válidos deve permitir entrada no sistema', () => {
     //  Act
     cy.get('#username').click().type('julio.lima')
